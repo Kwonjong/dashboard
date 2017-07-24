@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Dashboard - Administrator</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../../resources/template/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../resources/template/bower_components/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="../../resources/template/bower_components/Ionicons/css/ionicons.css">
+		<link rel="stylesheet" href="../../resources/template/bower_components/datatables.net-bs/css/dataTables.bootstrap.css">
+		<link rel="stylesheet" href="../../resources/template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+		<link rel="stylesheet" href="../../resources/template/dist/css/AdminLTE.css">
+		<link rel="stylesheet" href="../../resources/template/dist/css/skins/skin-yellow.css">
+		<link rel="stylesheet" href="../../resources/common/css/style_point.css">
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- Google Font -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+	</head>
+	<body class="hold-transition skin-yellow sidebar-mini">
+		<div class="wrapper">
+
+			<!-- Main Header -->
+			<header class="main-header">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<!-- 좌측 메뉴 최소화 시켰을 경우의 로고 크기 : 50x50 pixels -->
+					<span class="logo-mini"><img src="../../resources/common/img/logo_grandmachan_s.png"></span>
+					<span class="logo-lg"><img src="../../resources/common/img/logo_grandmachan_l.png"></span>
+				</a>
+
+				<!-- Header Navbar -->
+				<nav class="navbar navbar-static-top" role="navigation">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+				</nav>
+			</header>
+			<!-- 좌측 메뉴 영역-->
+			<aside class="main-sidebar">
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+					<div class="user-panel">
+						<!--
+							사용자 이미지 영역
+							<div class="pull-left image">
+								<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+							</div>
+						-->
+						<div class="pull-left info">
+							<!-- 사용자 이름 -->
+							<b>Administrator</b> 님
+						</div>
+					</div>
+
+					<!-- Sidebar Menu -->
+					<ul class="sidebar-menu" data-widget="tree">
+						<li class="header">MENU</li>
+						<!-- Optionally, you can add icons to the links -->
+						<li><a href="index.html">
+							<i class="fa fa-line-chart"></i> <span>통합정보</span></a>
+						</li>
+						<li class="treeview">
+							<a href="#"><i class="fa fa-users"></i> <span>회원관리</span>
+								<span class="pull-right-container">
+									<i class="fa fa-angle-left pull-right"></i>
+								</span>
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="user_mng_cus.html"><i class="fa fa-circle-o"></i>일반사용자</a></li>
+								<li><a href="user_mng_lic.html"><i class="fa fa-circle-o"></i>사업자</a></li>
+								<li><a href="user_mng_admin.html"><i class="fa fa-circle-o"></i>관리자</a></li>
+							</ul>
+						</li>
+						<li class="active treeview">
+							<a href="#"><i class="fa fa-krw"></i> <span>포인트관리</span>
+								<span class="pull-right-container">
+									<i class="fa fa-angle-left pull-right"></i>
+								</span>
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="point_mng_list.html"><i class="fa fa-circle-o"></i>포인트목록</a></li>
+								<li><a href="point_mng_give.html"><i class="fa fa-circle-o"></i>포인트지급</a></li>
+								<li class="active"><a href="point_mng_give_bd.html"><i class="fa fa-circle-o"></i>포인트지급내역</a></li>
+							</ul>
+						</li>
+						<li ><a href="item_mng.html">
+							<i class="fa fa-gift"></i> <span>상품추가하기</span></a>
+						</li>
+						<!-- 	추후  업데이트 예정				
+							<li ><a href="#">
+								<i class="fa fa-link"></i> <span>세트만들기</span></a>
+							</li> 
+						-->
+						<li class="treeview">
+							<a href="#"><i class="fa fa-list"></i> <span>통합게시판</span>
+								<span class="pull-right-container">
+									<i class="fa fa-angle-left pull-right"></i>
+								</span>
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="board_notice.html"><i class="fa fa-circle-o"></i>공지사항</a></li>
+								<li><a href="board_question.html"><i class="fa fa-circle-o"></i>자주하는질문</a></li>
+
+							</ul>
+						</li>
+						<li ><a href="sales_mng.html">
+							<i class="fa fa-inbox"></i> <span>매출관리</span></a>
+						</li>
+						<li ><a href="#">
+							<i class="fa fa-power-off"></i> <span>로그아웃</span></a>
+						</li>
+					</ul>
+					<!-- /.sidebar-menu -->
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1>
+						포인트관리
+						<small>포인트지급내역</small>
+					</h1>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-krw"></i> &nbsp;포인트관리</li>
+						<li class="active">포인트지급내역</li>
+					</ol>
+				</section>
+
+				<!-- Main content -->
+				<section class="content container-fluid">
+					<div class="content container-fluid area">
+						<table id="point_list" class="table table-bordered table-striped">
+							<thead>
+								<th><input type="checkbox"></th>
+								<th>일반사용자 ID(이메일)</th>
+								<th>이름</th>
+								<th>포인트 명</th>
+								<th>지급포인트</th>
+								<th>지급일자</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td><a data-toggle="modal" href="#modal-default2">gyoil0126@gmail.com</a></td>
+									<td>구교일</td>
+									<td>마찬할매의용돈</td>
+									<td>800</td>
+									<td>2017-07-07</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td><a data-toggle="modal" href="#modal-default2">gilgil0126@gmail.com</a></td>
+									<td>홍길동</td>
+									<td>마찬할매의용돈</td>
+									<td>800</td>
+									<td>2017-07-07</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+
+			<!--Footer -->
+			<footer class="main-footer">
+				<!-- 
+					Copyright 우측 문구
+					<div class="pull-right hidden-xs">
+					Anything you want
+					</div> 
+				-->
+				<!-- Default to the left -->
+				<strong>Copyright &copy; 2016 <a href="http://www.grandmachan.com">GrandMachan</a>.</strong> All rights reserved.
+			</footer>
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- REQUIRED JS SCRIPTS -->
+		<!-- jQuery 3 -->
+		<script src="../../resources/template/bower_components/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap 3.3.7 -->
+		<script src="../../resources/template/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="../../resources/template/dist/js/adminlte.min.js"></script>
+		<!-- Datatables.js -->
+		<script src="../../resources/template/bower_components/datatables.net/js/jquery.dataTables.js"></script>
+		<script src="../../resources/template/bower_components/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+		<!-- date-range-picker -->
+		<script src="../../resources/template/bower_components/moment/min/moment.min.js"></script>
+		<script src="../../resources/template/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+		<script src="../../resources/common/js/table_point_bd.js"></script>
+		<!-- Optionally, you can add Slimscroll and FastClick plugins.
+		Both of these plugins are recommended to enhance the
+		user experience. -->
+	</body>
+</html>
