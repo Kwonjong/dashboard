@@ -270,124 +270,126 @@
 						<span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title">회원정보</h4>
 					</div>
-					<div class="modal-body">
-						<div class="modal_area">
-							<div id="user_id_lic">
-								<p>사업자 ID(이메일)</p>
-								<input type="text" class="form-control" placeholder="e-mail">
+					<form action="" method="post">
+						<div class="modal-body">
+							<div class="modal_area">
+								<div id="user_id_lic">
+									<p>사업자 ID(이메일)</p>
+									<input type="text" class="form-control" placeholder="e-mail">
+								</div>
+								<div id="user_name_lic">
+									<p>회원이름</p>
+									<input type="text" class="form-control" placeholder="Name">
+								</div>
 							</div>
-							<div id="user_name_lic">
-								<p>회원이름</p>
-								<input type="text" class="form-control" placeholder="Name">
+							<div class="modal_area">
+								<div id="address_lic">
+									<p>주소</p>
+									<input type="text" class="form-control" placeholder="Address">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="user_address_lic">
+									<p>상세주소</p>
+									<input type="text" class="form-control" placeholder="User Address">
+								</div>
+								<div id="user_company_name">
+									<p>상호명</p>
+									<input type="text" class="form-control" placeholder="Company Name">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="company_phone">
+									<p>사업장 전화번호</p>
+									<input type="text" class="form-control" placeholder="Company Phone">
+								</div>
+								<div id="user_phone">
+									<p>휴대폰 번호</p>
+									<input type="text" class="form-control"  placeholder="User Phone">
+								</div>
+								<div id="company_no">
+									<p>사업자등록번호</p>
+									<input type="text" class="form-control" placeholder="Company No">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="open_time">
+									<p>영업시간</p>
+									<input type="text" class="form-control" placeholder="Open Time">
+								</div>
+								<div id="order_time">
+									<p>주문마감시간</p>
+									<input type="text" class="" value="1">&nbsp;일전&nbsp;&nbsp; 
+									<select class="form-control select2" style="width: 50%;height:20px;float:right;">
+										<option selected="selected">시간 선택</option>
+										<option>00 : 00</option>
+										<option>01 : 00</option>
+										<option>02 : 00</option>
+										<option>03 : 00</option>
+										<option>04 : 00</option>
+										<option>05 : 00</option>
+										<option>06 : 00</option>
+										<option>07 : 00</option>
+										<option>08 : 00</option>
+										<option>09 : 00</option>
+										<option>10 : 00</option>
+										<option>11: 00</option>
+										<option>12 : 00</option>
+										<option>13 : 00</option>
+										<option>14 : 00</option>
+										<option>15 : 00</option>
+										<option>16 : 00</option>
+										<option>17 : 00</option>
+										<option>18 : 00</option>
+										<option>19 : 00</option>
+										<option>20 : 00</option>
+										<option>21 : 00</option>
+										<option>22 : 00</option>
+										<option>23 : 00</option>
+										<option>24 : 00</option>
+									</select>
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="minimum_order">
+									<p>최소주문금액</p>
+									<input type="text" class="form-control" value="0">
+								</div>
+								<div id="free_order">
+									<p>무료배송금액</p>
+									<input type="text" class="form-control" value="0">
+								</div>
+								<div id="post_pay">
+									<p>배송비</p>
+									<input type="text" class="form-control" value="0">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="thumbnail_img">
+									<p>매장 썸네일 이미지</p>
+									<input type="file" class="form-control">
+								</div>
+								<div id="banner_img">
+									<p>매장 배너 이미지</p>
+									<input type="file" class="form-control">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="intro_img">
+									<p>매장 소개</p>
+									<input type="file" class="form-control">
+								</div>
+								<div id="info_img">
+									<p>판매자정보 이미지</p>
+									<input type="file" class="form-control">
+								</div>
 							</div>
 						</div>
-						<div class="modal_area">
-							<div id="address_lic">
-								<p>주소</p>
-								<input type="text" class="form-control" placeholder="Address">
-							</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">취소</button>
+							<button type="button" class="btn btn-primary">추가</button>
 						</div>
-						<div class="modal_area">
-							<div id="user_address_lic">
-								<p>상세주소</p>
-								<input type="text" class="form-control" placeholder="User Address">
-							</div>
-							<div id="user_company_name">
-								<p>상호명</p>
-								<input type="text" class="form-control" placeholder="Company Name">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="company_phone">
-								<p>사업장 전화번호</p>
-								<input type="text" class="form-control" placeholder="Company Phone">
-							</div>
-							<div id="user_phone">
-								<p>휴대폰 번호</p>
-								<input type="text" class="form-control"  placeholder="User Phone">
-							</div>
-							<div id="company_no">
-								<p>사업자등록번호</p>
-								<input type="text" class="form-control" placeholder="Company No">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="open_time">
-								<p>영업시간</p>
-								<input type="text" class="form-control" placeholder="Open Time">
-							</div>
-							<div id="order_time">
-								<p>주문마감시간</p>
-								<input type="text" class="" value="1">&nbsp;일전&nbsp;&nbsp; 
-								<select class="form-control select2" style="width: 50%;height:20px;float:right;">
-									<option selected="selected">시간 선택</option>
-									<option>00 : 00</option>
-									<option>01 : 00</option>
-									<option>02 : 00</option>
-									<option>03 : 00</option>
-									<option>04 : 00</option>
-									<option>05 : 00</option>
-									<option>06 : 00</option>
-									<option>07 : 00</option>
-									<option>08 : 00</option>
-									<option>09 : 00</option>
-									<option>10 : 00</option>
-									<option>11: 00</option>
-									<option>12 : 00</option>
-									<option>13 : 00</option>
-									<option>14 : 00</option>
-									<option>15 : 00</option>
-									<option>16 : 00</option>
-									<option>17 : 00</option>
-									<option>18 : 00</option>
-									<option>19 : 00</option>
-									<option>20 : 00</option>
-									<option>21 : 00</option>
-									<option>22 : 00</option>
-									<option>23 : 00</option>
-									<option>24 : 00</option>
-								</select>
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="minimum_order">
-								<p>최소주문금액</p>
-								<input type="text" class="form-control" value="0">
-							</div>
-							<div id="free_order">
-								<p>무료배송금액</p>
-								<input type="text" class="form-control" value="0">
-							</div>
-							<div id="post_pay">
-								<p>배송비</p>
-								<input type="text" class="form-control" value="0">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="thumbnail_img">
-								<p>매장 썸네일 이미지</p>
-								<input type="file" class="form-control">
-							</div>
-							<div id="banner_img">
-								<p>매장 배너 이미지</p>
-								<input type="file" class="form-control">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="intro_img">
-								<p>매장 소개</p>
-								<input type="file" class="form-control">
-							</div>
-							<div id="info_img">
-								<p>판매자정보 이미지</p>
-								<input type="file" class="form-control">
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default pull-left" data-dismiss="modal">취소</button>
-						<button type="button" class="btn btn-primary">추가</button>
-					</div>
+					</form>
 				</div>
 				<!-- /.modal-content -->
 			</div>
@@ -404,124 +406,126 @@
 						<span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title">회원정보</h4>
 					</div>
-					<div class="modal-body">
-						<div class="modal_area">
-							<div id="user_id_lic">
-								<p>사업자 ID(이메일)</p>
-								<input type="text" class="form-control" placeholder="e-mail">
+					<form action="" method="post">
+						<div class="modal-body">
+							<div class="modal_area">
+								<div id="user_id_lic">
+									<p>사업자 ID(이메일)</p>
+									<input type="text" class="form-control" placeholder="e-mail">
+								</div>
+								<div id="user_name_lic">
+									<p>회원이름</p>
+									<input type="text" class="form-control" placeholder="Name">
+								</div>
 							</div>
-							<div id="user_name_lic">
-								<p>회원이름</p>
-								<input type="text" class="form-control" placeholder="Name">
+							<div class="modal_area">
+								<div id="address_lic">
+									<p>주소</p>
+									<input type="text" class="form-control" placeholder="Address">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="user_address_lic">
+									<p>상세주소</p>
+									<input type="text" class="form-control" placeholder="User Address">
+								</div>
+								<div id="user_company_name">
+									<p>상호명</p>
+									<input type="text" class="form-control" placeholder="Company Name">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="company_phone">
+									<p>사업장 전화번호</p>
+									<input type="text" class="form-control" placeholder="Company Phone">
+								</div>
+								<div id="user_phone">
+									<p>휴대폰 번호</p>
+									<input type="text" class="form-control"  placeholder="User Phone">
+								</div>
+								<div id="company_no">
+									<p>사업자등록번호</p>
+									<input type="text" class="form-control" placeholder="Company No">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="open_time">
+									<p>영업시간</p>
+									<input type="text" class="form-control" placeholder="Open Time">
+								</div>
+								<div id="order_time">
+									<p>주문마감시간</p>
+									<input type="text" class="" value="1">&nbsp;일전&nbsp;&nbsp; 
+									<select class="form-control select2" style="width: 50%;height:20px;float:right;">
+										<option selected="selected">시간 선택</option>
+										<option>00 : 00</option>
+										<option>01 : 00</option>
+										<option>02 : 00</option>
+										<option>03 : 00</option>
+										<option>04 : 00</option>
+										<option>05 : 00</option>
+										<option>06 : 00</option>
+										<option>07 : 00</option>
+										<option>08 : 00</option>
+										<option>09 : 00</option>
+										<option>10 : 00</option>
+										<option>11: 00</option>
+										<option>12 : 00</option>
+										<option>13 : 00</option>
+										<option>14 : 00</option>
+										<option>15 : 00</option>
+										<option>16 : 00</option>
+										<option>17 : 00</option>
+										<option>18 : 00</option>
+										<option>19 : 00</option>
+										<option>20 : 00</option>
+										<option>21 : 00</option>
+										<option>22 : 00</option>
+										<option>23 : 00</option>
+										<option>24 : 00</option>
+									</select>
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="minimum_order">
+									<p>최소주문금액</p>
+									<input type="text" class="form-control" value="0">
+								</div>
+								<div id="free_order">
+									<p>무료배송금액</p>
+									<input type="text" class="form-control" value="0">
+								</div>
+								<div id="post_pay">
+									<p>배송비</p>
+									<input type="text" class="form-control" value="0">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="thumbnail_img">
+									<p>매장 썸네일 이미지</p>
+									<input type="file" class="form-control">
+								</div>
+								<div id="banner_img">
+									<p>매장 배너 이미지</p>
+									<input type="file" class="form-control">
+								</div>
+							</div>
+							<div class="modal_area">
+								<div id="intro_img">
+									<p>매장 소개</p>
+									<input type="file" class="form-control">
+								</div>
+								<div id="info_img">
+									<p>판매자정보 이미지</p>
+									<input type="file" class="form-control">
+								</div>
 							</div>
 						</div>
-						<div class="modal_area">
-							<div id="address_lic">
-								<p>주소</p>
-								<input type="text" class="form-control" placeholder="Address">
-							</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">취소</button>
+							<button type="button" class="btn btn-primary">수정</button>
 						</div>
-						<div class="modal_area">
-							<div id="user_address_lic">
-								<p>상세주소</p>
-								<input type="text" class="form-control" placeholder="User Address">
-							</div>
-							<div id="user_company_name">
-								<p>상호명</p>
-								<input type="text" class="form-control" placeholder="Company Name">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="company_phone">
-								<p>사업장 전화번호</p>
-								<input type="text" class="form-control" placeholder="Company Phone">
-							</div>
-							<div id="user_phone">
-								<p>휴대폰 번호</p>
-								<input type="text" class="form-control"  placeholder="User Phone">
-							</div>
-							<div id="company_no">
-								<p>사업자등록번호</p>
-								<input type="text" class="form-control" placeholder="Company No">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="open_time">
-								<p>영업시간</p>
-								<input type="text" class="form-control" placeholder="Open Time">
-							</div>
-							<div id="order_time">
-								<p>주문마감시간</p>
-								<input type="text" class="" value="1">&nbsp;일전&nbsp;&nbsp; 
-								<select class="form-control select2" style="width: 50%;height:20px;float:right;">
-									<option selected="selected">시간 선택</option>
-									<option>00 : 00</option>
-									<option>01 : 00</option>
-									<option>02 : 00</option>
-									<option>03 : 00</option>
-									<option>04 : 00</option>
-									<option>05 : 00</option>
-									<option>06 : 00</option>
-									<option>07 : 00</option>
-									<option>08 : 00</option>
-									<option>09 : 00</option>
-									<option>10 : 00</option>
-									<option>11: 00</option>
-									<option>12 : 00</option>
-									<option>13 : 00</option>
-									<option>14 : 00</option>
-									<option>15 : 00</option>
-									<option>16 : 00</option>
-									<option>17 : 00</option>
-									<option>18 : 00</option>
-									<option>19 : 00</option>
-									<option>20 : 00</option>
-									<option>21 : 00</option>
-									<option>22 : 00</option>
-									<option>23 : 00</option>
-									<option>24 : 00</option>
-								</select>
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="minimum_order">
-								<p>최소주문금액</p>
-								<input type="text" class="form-control" value="0">
-							</div>
-							<div id="free_order">
-								<p>무료배송금액</p>
-								<input type="text" class="form-control" value="0">
-							</div>
-							<div id="post_pay">
-								<p>배송비</p>
-								<input type="text" class="form-control" value="0">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="thumbnail_img">
-								<p>매장 썸네일 이미지</p>
-								<input type="file" class="form-control">
-							</div>
-							<div id="banner_img">
-								<p>매장 배너 이미지</p>
-								<input type="file" class="form-control">
-							</div>
-						</div>
-						<div class="modal_area">
-							<div id="intro_img">
-								<p>매장 소개</p>
-								<input type="file" class="form-control">
-							</div>
-							<div id="info_img">
-								<p>판매자정보 이미지</p>
-								<input type="file" class="form-control">
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default pull-left" data-dismiss="modal">취소</button>
-						<button type="button" class="btn btn-primary">수정</button>
-					</div>
+					</form>
 				</div>
 				<!-- /.modal-content -->
 			</div>
