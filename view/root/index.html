@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../../resources/template/bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../../resources/template/bower_components/font-awesome/css/font-awesome.css">
 		<link rel="stylesheet" href="../../resources/template/bower_components/Ionicons/css/ionicons.css">
+		<link rel="stylesheet" href="../../resources/template/bower_components/datatables.net-bs/css/dataTables.bootstrap.css">
 		<link rel="stylesheet" href="../../resources/template/bower_components/select2/dist/css/select2.css">
 		<link rel="stylesheet" href="../../resources/template/dist/css/AdminLTE.css">
 		<link rel="stylesheet" href="../../resources/template/dist/css/skins/skin-yellow.css">
@@ -124,13 +125,9 @@
 			<div class="content-wrapper">
 				<!-- Content Header (Page header) -->
 				<section class="content-header">
-					<h1>
-						통합정보
-					</h1>
-					<ol class="breadcrumb">
-						<li><i class="fa fa-line-chart"></i> &nbsp;통합정보</li>
-						<li class="active">Here</li>
-					</ol>
+					<h4>
+						<i class="fa fa-line-chart"></i> &nbsp;통합정보
+					</h4>
 				</section>
 
 				<!-- Main content -->
@@ -190,7 +187,7 @@
 							<b>일일 매출현황 그래프</b>
 						</div>
 						<div class="chart">
-							<canvas id="lineChart"></canvas>
+							<canvas id="lineChart" ></canvas>
 						</div>
 					</div>
 					<div class="content container-fluid area_best">
@@ -198,7 +195,7 @@
 							<b>BEST 상품 10</b>
 						</div>
 						<div class="best_table">
-							<table class="table_item table-bordered table-striped">
+							<table class="table table-bordered table-striped">
 								<thead>
 									<tr>
 										<th>순위</th>
@@ -289,7 +286,7 @@
 							<b>BEST 우수고객 10</b>
 						</div>
 						<div class="best_table">
-							<table class="table_cus table-bordered table-striped">
+							<table class="table table-bordered table-striped">
 								<thead>
 									<tr>
 										<th>순위</th>

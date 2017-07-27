@@ -139,7 +139,7 @@ body {
 /* Content */
 .content {
   min-height: 250px;
-  padding: 15px;
+  padding-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -297,6 +297,7 @@ a:focus {
 }
 .main-header .logo .logo-lg {
   display: block;
+  margin-left:-35px;
 }
 .main-header .logo .logo-mini {
   display: none;

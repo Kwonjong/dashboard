@@ -77,12 +77,49 @@
 
 @media(max-width:1555px){
 	.menu_area{
+		width:100%;
+		clear:none;
+	}
+
+	.menu_category{
 		display:none;
+	}
+
+	.menu_list{
+		padding:0;
+	}
+
+	.menu_list ul{
+		text-align: left;
+		padding-left:3px;
+	}
+
+	.menu_list ul > li{
+		margin-top:0px;
+		display:inline-block;
+	}
+
+	.menu_list ul > li:first-child{
+		display:block;
+		margin-bottom:8px;
+	}
+
+	.menu_list ul > li + li:after{
+		margin-left:10px;
+		margin-right:10px;
+		content: '\00a0|\00a0';
 	}
 
 	.data_toolbar{
 		width:300px;
 	}
+
+	.list_area{
+		width:100%;
+		margin-left:0;
+		float:left;
+	}
+
 }
 
 @media(max-width:1135px){
