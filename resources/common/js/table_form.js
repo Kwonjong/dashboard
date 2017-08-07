@@ -10,4 +10,12 @@ $(function (){
 	});
 
 	$('div.data_btn').html('<button type="button" class="btn btn-danger">삭제</button> <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-default">추가</button>');
+
+	$('#all_select').click(function(){
+		if($('#all_select').prop('checked')){
+			$('input[name=one_select]').prop('checked',true);
+		} else{
+			$('input[name=one_select]').prop('checked',false);
+		}
+	})
 })

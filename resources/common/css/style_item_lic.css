@@ -46,7 +46,7 @@
 }
 
 .data_toolbar{
-	width:450px;
+	width:200px;
 	margin-left:15px;
 	float:left;
 }
@@ -58,7 +58,7 @@
 }
 
 .data_search{
-	width:420px;
+	width:200px;
 	float:right;
 	margin-right:15px;
 }
@@ -74,6 +74,7 @@
 	float:left;
 	margin-left:15px;
 }
+
 
 @media(max-width:1555px){
 	.menu_area{
@@ -110,29 +111,12 @@
 		content: '\00a0|\00a0';
 	}
 
-	.data_toolbar{
-		width:300px;
-	}
-
 	.list_area{
 		width:100%;
 		margin-left:0;
 		float:left;
 	}
 
-}
-
-@media(max-width:1135px){
-	.data_search{
-		margin-left:15px;
-		float:left;
-	}
-}
-
-@media(max-width:770px){
-	.data_toolbar{
-		margin-left:2px;
-	}
 }
 
 .modal_content{
@@ -226,7 +210,20 @@
 	}
 }
 
-/* 170801 추가 */
+@media(max-width:768px){
+	.data_toolbar{
+		margin-left:3px;
+	}
+}
+
+@media(max-width:450px){
+	.data_search{
+		float:left;
+		clear:none;
+		margin-left:10px;
+	}
+}
+
 @media(max-width:980px){
 	.modal_content .modal_side_area{
 		width:30%;

@@ -1,7 +1,7 @@
-$(function (){
-	$('#point_list').DataTable({
+$( function(){
+	$('#pay_list').DataTable({
 		"dom": 
-			"<'row'<'data_toolbar'<'data_btn'><'data_count'l><'data_search'f>><'date_select_bar'>>" +
+			"<'row'<'data_count'l><'data_toolbar'<'data_search'f><'date_select'>>>" +
 			"<'row'<'col-sm-12'tr>>" +
 			"<'row'<'data_info'i><'data_paging'p>>",
 		"columnDefs": [
@@ -9,11 +9,9 @@ $(function (){
 		]
 	});
 
-	$('div.data_btn').html('<button type="button" class="btn btn-warning">포인트 회수</button>');
-	$('div.date_select_bar').html('<button type="button" class="btn btn-default pull-right" id="daterange-btn"><span><i class="fa fa-calendar"></i> 기간 선택</span><i class="fa fa-caret-down"></i></button>');
+	$('div.date_select').html('<button type="button" class="btn btn-default pull-right" id="daterange-btn1"><span><i class="fa fa-calendar"></i> 기간 선택</span><i class="fa fa-caret-down"></i></button>');
 
-	// 날짜 선택
-	$('#daterange-btn').daterangepicker({
+	$('#daterange-btn1').daterangepicker({
 		ranges   : {
 				'오늘'       : [moment(), moment()],
 				'어제'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
@@ -27,7 +25,7 @@ $(function (){
 		},
 
 		function (start, end) {
-		$('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+		$('#daterange-btn1 span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
 	})
 
 	$('#all_select').click(function(){

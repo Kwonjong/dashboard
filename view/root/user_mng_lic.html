@@ -112,6 +112,9 @@
 						<li ><a href="sales_mng.html">
 							<i class="fa fa-inbox"></i> <span>매출관리</span></a>
 						</li>
+						<li ><a href="review_mng.html">
+							<i class="fa fa-commenting-o"></i> <span>후기관리</span></a>
+						</li>
 						<li ><a href="#">
 							<i class="fa fa-power-off"></i> <span>로그아웃</span></a>
 						</li>
@@ -136,7 +139,7 @@
 					<div class="content container-fluid area">
 						<table id="user_list" class="table table-bordered table-striped">
 							<thead>
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" id="all_select"></th>
 								<th>사업자 ID(이메일)</th>
 								<th>상호명</th>
 								<th>전화번호</th>
@@ -146,7 +149,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">grand1@naver.com</a></td>
 									<td>그랜마찬</td>
 									<td>010-1234-5152</td>
@@ -155,7 +158,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">grand2chan@gmail.com</a></td>
 									<td>옆집반찬</td>
 									<td>010-1234-5152</td>
@@ -164,7 +167,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">grand1ch@hanmail.net</a></td>
 									<td>뒷집반찬</td>
 									<td>010-1234-5152</td>
@@ -173,7 +176,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">grand345@naver.com</a></td>
 									<td>발로찬</td>
 									<td>010-1234-5152</td>
@@ -182,7 +185,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">grand158@kpu.ac.kr</a></td>
 									<td>잔 칠때 나는 소리 : 찬</td>
 									<td>010-1234-5152</td>
@@ -191,7 +194,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">1grand1@naver.com</a></td>
 									<td>얘네집반찬</td>
 									<td>010-1234-5152</td>
@@ -200,7 +203,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">2grandma1@naver.com</a></td>
 									<td>걔네집반찬</td>
 									<td>010-1234-5152</td>
@@ -208,7 +211,7 @@
 									<td>1000000</td>
 									<td>10</td>
 								</tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">chan12312@naver.com</a></td>
 									<td>더반찬</td>
 									<td>010-1234-5152</td>
@@ -217,7 +220,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">machan@kpu.ac.kr</a></td>
 									<td>내반찬</td>
 									<td>010-1234-5152</td>
@@ -226,7 +229,7 @@
 									<td>10</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">grand21@gmail.com</a></td>
 									<td>마른반찬</td>
 									<td>010-1234-5152</td>

@@ -1,0 +1,171 @@
+.area{
+	border-top-style:solid;
+	border-top-color:#ffdd00;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin-top:15px;
+	padding-top:3px;
+	float:none;
+}
+
+.area b{
+	vertical-align: center;
+	font-size: 18px;
+}
+
+.info_area{
+	width:60%;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.info_area p{
+	color:#B0B0B0;
+}
+
+.info_area input[type="text"]{
+	border-radius: 5px;
+	border-top-style:none;
+	border-left-style:none;
+	border-right-style:none;
+	border-bottom-width: 2px;
+	border-bottom-color:#909090;
+}
+
+.form_section{
+	margin-bottom:20px;
+	width:100%;
+	height:65px;
+	clear:both;
+}
+
+#user_id_lic{
+	width:45%;
+	float:left;
+}
+
+#user_name_lic {
+	width:45%;
+	float:right;
+}
+
+#address_lic{
+	width:100%;
+}
+
+#user_address_lic {
+	width:45%;
+	float:left;
+}
+
+#user_company_name {
+	width:45%;
+	float:right;
+}
+
+#company_phone {
+	width:28%;
+	float:left;
+}
+
+#user_phone{
+	width:28%;
+	float:left;
+	margin-left:8%;
+	margin-right:8%;
+}
+
+#company_no{
+	width:28%;
+	float:left;
+}
+
+#open_time {
+	width:45%;
+	float:left;
+}
+
+#order_time{
+	width:45%;
+	float:right;
+	border-bottom-style:solid;
+	border-color:#909090;
+	border-bottom-width:2px;
+	border-radius: 5px;
+}
+
+#order_time input[type="text"]{
+	border-style:none;
+	padding:6px 12px;
+	width:25%;
+	text-align:right;
+}
+
+#minimum_order{
+	width:28%;
+	float:left;
+}
+
+#free_order{
+	width:28%;
+	float:left;
+	margin-left:8%;
+	margin-right:8%;
+}
+
+#post_pay{
+	width:28%;
+	float:left;
+}
+
+#btn_area{
+	margin-top:20px;
+	float:right;
+}
+
+.modal-body{
+	height:700px;
+	overflow-y:auto;
+}
+
+@media(max-width:895px){
+	.info_area{
+		width:450px;
+	}
+}
+
+@media(max-width:510px){
+	.info_area{
+		margin-top:0;
+		width:100%;
+	}
+
+	.form_section #user_id_lic,
+	.form_section #user_name_lic,
+	.form_section #address_lic,
+	.form_section #user_address_lic, 
+	.form_section #user_company_name, 
+	.form_section #company_phone, 
+	.form_section #user_phone,
+	.form_section #company_no,
+	.form_section #open_time,
+	.form_section #order_time,
+	.form_section #minimum_order,
+	.form_section #free_order,
+	.form_section #post_pay{
+		margin-top:15px;
+		width:100%;
+		float:left;
+		clear:none;
+	}
+
+	.form_section #user_phone,
+	.form_section #free_order{
+		margin-left:0;
+	}
+
+	.modal-body{
+		height:500px;
+	}
+}

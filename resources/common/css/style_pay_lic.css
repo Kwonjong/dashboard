@@ -1,0 +1,67 @@
+.area{
+	border-top-style:solid;
+	border-top-color:#ffdd00;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin-top:15px;
+	padding-top:5px;
+	float:none;
+}
+
+.pay_table{
+	margin-top:5px;
+}
+
+.pay_null{
+	width:100px;
+	height:25px;
+	background-color: #ff5050;
+	border-radius: 15px;
+	color:#ffffff;
+	text-align: center;
+	padding-top:2px;
+}
+
+.pay_finish{
+	width:100px;
+	height:25px;
+	background-color: #4472c4;
+	border-radius: 15px;
+	color:#ffffff;
+	text-align: center;
+	padding-top:2px;
+}
+
+.data_count{
+	width:100px;
+	float:left;
+	margin-top:1px;
+	margin-left:15px;
+}
+
+.data_toolbar{
+	width:450px;
+	float:right;
+	margin-right:15px;
+}
+
+.data_info{
+	width:6%;
+	float:left;
+	margin-left:20px;
+}
+
+.data_search{
+	margin-top:1px;
+	width:200px;
+	float:left;
+}
+
+.date_select{
+	float:right;
+}
+
+.data_paging{
+	margin-top:5px;
+	margin-bottom:0;
+}

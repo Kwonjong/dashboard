@@ -14,4 +14,12 @@ $(function (){
 	$('div.select_box').html('<div class="select_box"><select class="form-control select2" style="width: 100%;"><option selected="selected">반찬가게선택</option><option>옆집반찬</option><option>앞집반찬</option><option>뒷집반찬</option></select></div>');
 
 	$('.select2').select2();
+
+	$('#all_select').click(function(){
+		if($('#all_select').prop('checked')){
+			$('input[name=one_select]').prop('checked',true);
+		} else{
+			$('input[name=one_select]').prop('checked',false);
+		}
+	})
 })

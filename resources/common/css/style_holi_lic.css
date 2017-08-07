@@ -1,0 +1,13 @@
+.area{
+	border-top-style:solid;
+	border-top-color:#ffdd00;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin-top:15px;
+	padding-top:20px;
+	float:none;
+}
+
+#calendar{
+	width:80%;
+}

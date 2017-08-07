@@ -112,6 +112,9 @@
 						<li ><a href="sales_mng.html">
 							<i class="fa fa-inbox"></i> <span>매출관리</span></a>
 						</li>
+						<li ><a href="review_mng.html">
+							<i class="fa fa-commenting-o"></i> <span>후기관리</span></a>
+						</li>
 						<li ><a href="#">
 							<i class="fa fa-power-off"></i> <span>로그아웃</span></a>
 						</li>
@@ -136,7 +139,7 @@
 					<div class="content container-fluid area">
 						<table id="point_list" class="table table-bordered table-striped">
 							<thead>
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" id="all_select"></th>
 								<th>포인트 명</th>
 								<th>지급포인트</th>
 								<th>지급방법</th>
@@ -145,7 +148,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">댓글감사포인트</a></td>
 									<td>500</td>
 									<td>관리자 지급</td>
@@ -153,7 +156,7 @@
 									<td>SNS</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">회원감사제포인트</a></td>
 									<td>300</td>
 									<td>관리자 지급</td>
@@ -161,7 +164,7 @@
 									<td>SNS</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">말복이벤트포인트</a></td>
 									<td>300</td>
 									<td>관리자 지급</td>
@@ -169,7 +172,7 @@
 									<td>SNS</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input type="checkbox" name="one_select"></td>
 									<td><a data-toggle="modal" href="#modal-default2">마찬할매의용돈</a></td>
 									<td>800</td>
 									<td>관리자 지급</td>
