@@ -26,7 +26,24 @@ $(function(){
 	});
 
 	$('#del_notice').click(function(){
-		// 삭제 버튼을 클릭하였을 때의 액션을 입력해주세요.
-	});
+		var checkCount = "";
 
+		$('input[name=one_select]:checked').each(function(){
+			checkCount = checkCount + $(this).val()+",";
+		})
+		// console.log("checkCount = " + checkCount);
+		// 제일 뒤에 있는 콤마 제거하기
+		checkCount = checkCount.substring(0, checkCount.lastIndexOf(","));
+
+		if(checkCount == ''){
+			alert("삭제할 게시물을 체크하세요");
+			return false;
+		}
+		// console.log("checkCount = " + checkCount);
+
+		if(confirm("선택한 게시물을 삭제하시겠습니까?")){
+			// servlet 작업 해주세요.
+		}
+
+	});
 })

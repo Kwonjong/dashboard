@@ -11,7 +11,7 @@ $(function(){
 		"order":[]
 	});
 
-	$('div.btn_set').html('<button type="button" id="add_notice" class="btn btn-warning">추가</button> <button type="button" id="del_notice" class="btn btn-danger">삭제</button>');
+	$('div.btn_set').html('<button type="button" id="add_question" class="btn btn-warning">추가</button> <button type="button" id="del_question" class="btn btn-danger">삭제</button>');
 
 	$('#all_select').click(function(){
 		if($('#all_select').prop('checked')){
@@ -21,11 +21,29 @@ $(function(){
 		}
 	});
 
-	$('#add_notice').click(function(){
+	$('#add_question').click(function(){
 		$(location).attr('href', 'question_form.html');	
 	});
 
-	$('#del_notice').click(function(){
-		// 삭제 버튼을 클릭하였을 때의 액션을 입력해주세요.
+	$('#del_question').click(function(){
+		var checkCount = "";
+
+		$('input[name=one_select]:checked').each(function(){
+			checkCount = checkCount + $(this).val()+",";
+		})
+		// console.log("checkCount = " + checkCount);
+		// 제일 뒤에 있는 콤마 제거하기
+		checkCount = checkCount.substring(0, checkCount.lastIndexOf(","));
+
+		if(checkCount == ''){
+			alert("삭제할 게시물을 체크하세요");
+			return false;
+		}
+		// console.log("checkCount = " + checkCount);
+
+		if(confirm("선택한 게시물을 삭제하시겠습니까?")){
+			// servlet 작업 해주세요.
+		}
+
 	});
 })

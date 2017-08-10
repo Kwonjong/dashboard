@@ -10,7 +10,7 @@ $(function (){
 		"order":[2, 'asc']
 	});
 
-	$('div.data_btn').html('<button type="button" class="btn btn-danger">삭제</button> <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-default">상품추가하기</button>');
+	$('div.data_btn').html('<button type="button" id="item_del" class="btn btn-danger">삭제</button> <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-default">상품추가하기</button>');
 	$('div.select_box').html('<div class="select_box"><select class="form-control select2" style="width: 100%;"><option selected="selected">반찬가게선택</option><option>옆집반찬</option><option>앞집반찬</option><option>뒷집반찬</option></select></div>');
 
 	$('.select2').select2();
@@ -21,5 +21,27 @@ $(function (){
 		} else{
 			$('input[name=one_select]').prop('checked',false);
 		}
+	})
+
+	$('#item_del').click(function(){
+		var checkCount = "";
+
+		$('input[name=one_select]:checked').each(function(){
+			checkCount = checkCount + $(this).val()+",";
+		})
+		// console.log("checkCount = " + checkCount);
+		// 제일 뒤에 있는 콤마 제거하기
+		checkCount = checkCount.substring(0, checkCount.lastIndexOf(","));
+
+		if(checkCount == ''){
+			alert("삭제할 상품을 체크하세요");
+			return false;
+		}
+		// console.log("checkCount = " + checkCount);
+
+		if(confirm("선택한 상품을 삭제하시겠습니까?")){
+			// servlet 작업 해주세요.
+		}
+
 	})
 })

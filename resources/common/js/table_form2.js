@@ -1,5 +1,6 @@
+// 사업자 회원
 $(function (){
-	$('#point_list').DataTable({
+	$('#user_list').DataTable({
 		"dom": 
 			"<'row'<'data_toolbar'<'data_count'l><'data_btn'><'data_search'f>>>" +
 			"<'row'<'col-sm-12'tr>>" +
@@ -9,7 +10,7 @@ $(function (){
 		]
 	});
 
-	$('div.data_btn').html('<button type="button" id="point_del" class="btn btn-danger">삭제</button> <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-default">추가</button>');
+	$('div.data_btn').html('<button type="button" id="user_del" class="btn btn-danger">삭제</button> <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-default">추가</button>');
 
 	$('#all_select').click(function(){
 		if($('#all_select').prop('checked')){
@@ -19,7 +20,7 @@ $(function (){
 		}
 	})
 
-	$('#point_del').click(function(){
+	$('#user_del').click(function(){
 		var checkCount = "";
 
 		$('input[name=one_select]:checked').each(function(){
@@ -30,12 +31,12 @@ $(function (){
 		checkCount = checkCount.substring(0, checkCount.lastIndexOf(","));
 
 		if(checkCount == ''){
-			alert("삭제할 포인트를 체크하세요");
+			alert("삭제할 사용자를 체크하세요");
 			return false;
 		}
 		// console.log("checkCount = " + checkCount);
 
-		if(confirm("선택한 포인트를 삭제하시겠습니까?")){
+		if(confirm("선택한 사용자를 삭제하시겠습니까?")){
 			// servlet 작업 해주세요.
 		}
 
