@@ -7,3 +7,25 @@
 	padding-top:20px;
 	float:none;
 }
+
+.table th{
+	text-align: center;
+}
+
+.table tr td:nth-of-type(1), .table tr td:nth-of-type(3){
+	text-align: center;
+}
+
+.data_search{
+	margin-left:15px;
+	float:left;
+}
+
+.data_paging{
+	margin-top:10px;
+}
+
+.btn_set{
+	margin-left:15px;
+	float:left;
+}
