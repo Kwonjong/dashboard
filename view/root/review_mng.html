@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="../../resources/template/bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../../resources/template/bower_components/font-awesome/css/font-awesome.css">
 		<link rel="stylesheet" href="../../resources/template/bower_components/Ionicons/css/ionicons.css">
+		<link rel="stylesheet" href="../../resources/template/bower_components/select2/dist/css/select2.css">
+		<link rel="stylesheet" href="../../resources/template/bower_components/datatables.net-bs/css/dataTables.bootstrap.css">
 		<link rel="stylesheet" href="../../resources/template/dist/css/AdminLTE.css">
 		<link rel="stylesheet" href="../../resources/template/dist/css/skins/skin-yellow.css">
 		<link rel="stylesheet" href="../../resources/common/css/style_review.css">
@@ -134,12 +136,127 @@
 				<!-- Main content -->
 				<section class="content container-fluid">
 					<div class="content container-fluid area">
-						<p style="font-size:50pt">준비중 입니다.</p>
+						<table id="review_list" class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th><input type="checkbox" id="all_select"></th>
+									<th>후기이미지</th>
+									<th>상품이름</th>
+									<th>ID</th>
+									<th>별점</th>
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" name="one_select"></td>
+									<td><img src="../../resources/common/img/logo_grandmachan_s.png"></td>
+									<td><a data-toggle="modal" href="#modal-default">비빔 오징어 젓갈</a></td>
+									<td>gyoil0126</td>
+									<!-- 별점 표시는 JSP 구문으로 출력할 건지...? -->
+									<td>
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+									</td>
+									<td>허벌벌벌벌</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="one_select"></td>
+									<td><img src="../../resources/common/img/logo_grandmachan_s.png"></td>
+									<td><a data-toggle="modal" href="#modal-default">오징어 무침</a></td>
+									<td>gyoil0126</td>
+									<!-- 별점 표시는 JSP 구문으로 출력할 건지...? -->
+									<td>
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+									</td>
+									<td>허벌벌벌벌</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="one_select"></td>
+									<td><img src="../../resources/common/img/logo_grandmachan_s.png"></td>
+									<td><a data-toggle="modal" href="#modal-default">간장게장</a></td>
+									<td>gyoil0126</td>
+									<!-- 별점 표시는 JSP 구문으로 출력할 건지...? -->
+									<td>
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+									</td>
+									<td>허벌벌벌벌</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="one_select"></td>
+									<td><img src="../../resources/common/img/logo_grandmachan_s.png"></td>
+									<td><a data-toggle="modal" href="#modal-default">비빔 오징어 젓갈</a></td>
+									<td>gyoil0126</td>
+									<!-- 별점 표시는 JSP 구문으로 출력할 건지...? -->
+									<td>
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+									</td>
+									<td>허벌벌벌벌</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</section>
 				<!-- /.content -->
 			</div>
 			<!-- /.content-wrapper -->
+
+			<!-- Modal (후기 열람) -->
+			<div class="modal fade" id="modal-default">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">후기</h4>
+							<div class="title_area">
+								<div class="thumb_img">
+									<img src="../../resources/common/img/logo_grandmachan_s.png">
+								</div>
+								<div class="title_txt">
+									[test] test<br>
+									100
+								</div>
+							</div>
+						</div>
+						<form action="#" method="post">
+							<div class="modal-body">
+								<div class="modal_content">
+									<div>
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+										<img src="../../resources/common/img/star.png" class="star">
+									</div>
+									<div class="description">
+										5살 때 부터 난 반찬을 시켰어, 배고팠지. 청국장부터 간장게장 제육볶음, 맛있었지. 훌랄랄라 그 뒤로 난 계속 시켰어, 장난없지. 난 이게 참 좋아 정말 맛있어.
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-yellow" data-dismiss="modal" style="width:45%;float:left">확인</button>
+								<button type="button" id="review_del" class="btn btn-yellow" style="width:45%">삭제</button>
+							</div>
+						</form>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+
 
 			<!--Footer -->
 			<footer class="main-footer">
@@ -162,7 +279,12 @@
 		<script src="../../resources/template/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<!-- AdminLTE App -->
 		<script src="../../resources/template/dist/js/adminlte.min.js"></script>
-
+		<!-- Select2 -->
+		<script src="../../resources/template/bower_components/select2/dist/js/select2.full.js"></script>
+		<!-- Datatables.js -->
+		<script src="../../resources/template/bower_components/datatables.net/js/jquery.dataTables.js"></script>
+		<script src="../../resources/template/bower_components/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+		<script src="../../resources/common/js/table_review.js"></script>
 		<!-- Optionally, you can add Slimscroll and FastClick plugins.
 		Both of these plugins are recommended to enhance the
 		user experience. -->

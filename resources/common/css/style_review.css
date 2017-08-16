@@ -7,3 +7,89 @@
 	padding-top:20px;
 	float:none;
 }
+
+.table th{
+	text-align: center;
+}
+
+.table tbody tr td{
+	vertical-align:middle;
+	text-align:left;
+}
+
+.table td:nth-of-type(1), .table td:nth-of-type(2), .table td:nth-of-type(5){text-align:center;}
+
+.table thead tr th:nth-of-type(1), .table tbody tr td:nth-of-type(1){width:5%;}
+.table thead tr th:nth-of-type(2), .table tbody tr td:nth-of-type(2){width:10%;}
+.table thead tr th:nth-of-type(3), .table tbody tr td:nth-of-type(3){width:30%;}
+.table thead tr th:nth-of-type(4), .table tbody tr td:nth-of-type(4){width:10%;}
+.table thead tr th:nth-of-type(5), .table tbody tr td:nth-of-type(5){width:10%;}
+.table thead tr th:nth-of-type(6), .table tbody tr td:nth-of-type(6){width:10%;}
+
+.data_toolbar{
+	width:450px;
+	margin-left:15px;
+	float:left;
+}
+
+.data_count{
+	width:100px;
+	float:left;
+	margin-top:1px;
+}
+
+.data_search{
+	width:420px;
+	float:right;
+	margin-right:15px;
+}
+
+.select_box{
+	width:180px;
+	float:left;
+	clear:both;
+}
+
+.area .data_info{
+	width:6%;
+	float:left;
+	margin-left:15px;
+}
+
+.star{
+	width:20px;
+	height:20px;
+}
+
+/* modal */
+
+.modal-content{
+	width:520px;
+	margin:auto;
+
+}
+
+.title_area{
+	margin-top:10px;
+	height:50px;
+}
+
+.title_area .thumb_img{
+	float:left;
+}
+
+.title_area .thumb_img img{
+	width:50px;
+	height:50px;
+}
+
+.title_area .title_txt{
+	height:50px;
+	float:left;
+	margin-left:10px;
+	padding-top:5px;
+}
+
+.description{
+	margin-top:10px;
+}

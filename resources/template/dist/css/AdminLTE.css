@@ -2278,6 +2278,18 @@ a:focus {
 .btn-warning.hover {
   background-color: #e08e0b;
 }
+
+/* 170816 추가 */
+.btn-yellow {
+  background-color: #ffda00;
+  border-color: #ffdaoo;
+}
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow.hover {
+  background-color: #ff9600;
+}
+
 .btn-outline {
   border: 1px solid #fff;
   background: transparent;
